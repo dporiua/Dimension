@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
         if (cameraToggle.IsOrthographic()) 
         {
-            Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f); //restricts 2d movement in just one direction, change if misalligned
+            Vector3 movement = new Vector3(0.0f, 0.0f, moveVertical); //restricts 2d movement in just one direction, change if misalligned
             rb.velocity = movement * speed;
         }
         else

@@ -7,8 +7,8 @@ public class CameraToggle : MonoBehaviour
 
     void Start()
     {
-        orthographicCamera.enabled = true;
-        perspectiveCamera.enabled = false;
+        orthographicCamera.enabled = false;
+        perspectiveCamera.enabled = true;
     }
 
     void Update()
