@@ -24,4 +24,9 @@ public class CameraToggle : MonoBehaviour
         orthographicCamera.enabled = !orthographicCamera.enabled;
         perspectiveCamera.enabled = !perspectiveCamera.enabled;
     }
+
+    public bool IsOrthographic()
+    {
+        return orthographicCamera.enabled;
+    }
 }
