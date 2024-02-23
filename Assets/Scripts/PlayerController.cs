@@ -22,9 +22,9 @@ public class PlayerController : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        if (cameraToggle.IsOrthographic()) // Checks the camera to find the state
+        if (cameraToggle.IsOrthographic()) 
         {
-            Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
+            Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f); //restricts 2d movement in just one direction, change if misalligned
             rb.velocity = movement * speed;
         }
         else
