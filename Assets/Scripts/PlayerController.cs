@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int currenthealth = 0;
     [SerializeField] private string damage = "Damage";
     [SerializeField] private GameObject deathScene;
+    [SerializeField] private GameObject tutortext1;
+    [SerializeField] private GameObject tutortext2;
     [SerializeField] Animator animator1;
     [SerializeField] private Animator animator2;
     [SerializeField] private Animator animator3;
@@ -28,6 +30,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         cameraToggle = FindObjectOfType<CameraToggle>(); // looks for the camera script
         currenthealth = maxhealth;
+        tutortext1.SetActive(true);
+        tutortext2.SetActive(false);
     }
 
     void Update()
@@ -85,11 +89,15 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f); //restricts 2d movement in just one direction, change if misalligned
             rb.velocity = movement * speed;
+            tutortext2.SetActive(true);
+            tutortext1.SetActive(false);
         }
         else
         {
             Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
             rb.velocity = movement * speed;
+            tutortext2.SetActive(false);
+            tutortext1.SetActive(true);
         }
     }
 }
