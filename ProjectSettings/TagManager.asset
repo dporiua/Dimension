@@ -5,11 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Damage
+  - Obstacle
+  - Ground
+  - NoJumping
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 

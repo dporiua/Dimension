@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Tutorail 1.unity
+    path: Assets/Bouncing Dimension/Scenes/Menu.unity
+    guid: d8d2f7c77e6e89946971c0ece4cf6b11
+  - enabled: 1
+    path: Assets/Bouncing Dimension/Scenes/Tutorail 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Tutorail 2.unity
+    path: Assets/Bouncing Dimension/Scenes/Tutorail 2.unity
     guid: 1840d24f8826001468811a9a4ab32881
+  - enabled: 1
+    path: Assets/Bouncing Dimension/Scenes/Win Scene.unity
+    guid: 8d0e586b2215a874d8f50d0cbcc500e2
   m_configObjects: {}
